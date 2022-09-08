@@ -1,0 +1,13 @@
+spring:
+  kafka:
+    template:
+      default-topic: sensor
+    producer:
+      bootstrap-servers: ${BOOTSTRAP-SERVERS:localhost:9092}
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      batch-size: 500
+      properties:
+        spring.json.type.mapping: "sensorData:com.example.sensor.domein.SensorData"
+        linger.ms: 10_000
+
