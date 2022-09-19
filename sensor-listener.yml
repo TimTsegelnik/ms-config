@@ -14,7 +14,7 @@ spring:
       spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JsonDeserializer
       spring.json.type.mapping: "sensorData:com.example.sensorlistener.service.dto.SensorData"
   liquibase:
-    change-log: "classpath:db/liquidbase/changelog-master.yml"
+    change-log: "classpath:db/liquidbase/changelog-master.xml"
   datasource:
     url: ${SPRING_DATASOURCE_URL}
     username: ${SPRING_DATASOURCE_USERNAME:user}
