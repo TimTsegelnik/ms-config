@@ -1,17 +1,20 @@
-spring:
-  mvc:
-    pathmatch:
-      matching-strategy: ant_path_matcher
 feign:
   autoconfiguration:
     jackson:
       enabled: true
 
 keycloak:
-  auth-server-url: http://host.docker.internal:8080/auth
   realm: gate
+  auth-server-url: http://host.docker.internal:8080/auth
   resource: gate
   ssl-required: external
-  public-client: true
-  principal-attribute: preferred_username
-  verify-token-audience: true
+
+swagger:
+  project-title=@project: Microservices
+  project-version: 1.0
+  project-description: No pain no gain (KlSMEQKWI1ssCcp3mn5YgpDsbNgmcdWB)
+
+springdoc:
+  swagger-ui:
+    csrf:
+      enabled: true
