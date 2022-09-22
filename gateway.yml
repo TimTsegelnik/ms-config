@@ -10,7 +10,7 @@ keycloak:
   ssl-required: external
 
 swagger:
-  project-title=@project: Microservices
+  project-title: Microservices
   project-version: 1.0
   project-description: No pain no gain (KlSMEQKWI1ssCcp3mn5YgpDsbNgmcdWB)
 
